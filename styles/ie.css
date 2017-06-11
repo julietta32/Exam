@@ -1,0 +1,475 @@
+@import 'variables';
+
+
+
+*{
+     margin: 0;
+     padding: 0;
+}
+@font-face {
+     font-family: 'montserratbold';
+     src: url('../files/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../files/montserrat-bold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'montserratregular';
+     src: url('../files/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../files/montserrat-regular-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+//peoples
+div.peoples{
+     height: 700px;
+     width: $all;
+     background-image:url(../images/peoples_up.png);
+}
+//peoples_1
+
+div.peoples_1{
+     height: 218px;
+     width: $all;
+}
+div.urlau{
+     height: 60px;
+     width: 770px;
+     padding-left: 250px;
+     padding-top: 49px;
+	 float: left;
+     font-family: $font_1;
+     font-size: 20px;
+	 color: $w;
+}
+.urlau_320, .peoples_mobile, .ruki_mobile, .driver_mobile, .nogi_mobile, .guys_mobile, .buton_see_mobile, .discover_holliday_mobile, .menu_down_mobile{
+	display: none;
+}
+div.log{
+     height: 60px;
+     width: 60px;
+     padding-top: 49px;
+     padding-left: 23px;
+     float: left;   
+}
+div.sign{
+     height: 60px;
+     width: 320px;
+     padding-top: 39px;
+     float:left;
+     font-size: 14px; 
+     font-family: $font_1;
+}
+.sign_a, .log_a{
+     height: 40px;
+     width: 60px;
+     font-size: 14px;
+     font-family: $font_1;
+     display: block;
+     text-decoration: none;
+	 color: $w;  
+}
+.sign_a{
+     height: 27px;
+     width: 72px;
+     padding-left: 15px;
+     padding-top: 6px;
+     border: 1px solid $w;
+     @include border-radius (20px);  
+}
+div.share_your{
+     height: 108px;
+     width: $all;
+     text-align: center;
+     font-size: 52px;
+     font-family: $font_b;
+     color: $w;
+}
+
+//peoples_2
+
+div.peoples_2{
+     height: 115px;
+     width: $all;
+}
+div.and_find{
+     height: 69px;
+     width: $all;
+	 padding-top: 33px;
+     font-size: 24px;
+     font-family: sans-serif;
+     text-align: center;
+	 color: $w;
+}
+div.find_partner{
+     height: 100px;
+     width: $all;
+     padding-left: 609px; 
+}
+a.find_partner_a{
+     height: 31px;
+     width: 225px;
+     padding-top: 9px;
+     display: block;
+     text-decoration: none;
+	 background-color: #ff4e50;
+     font-family: $font_1;
+     font-size: 14px;
+     text-align: center;
+	 color: $w;
+     border: 1px solid #ff4e50;
+     @include border-radius (20px);
+}
+div.how_urlau{
+     height: 55px;
+     width: $all;
+     padding-top: 100px;
+     font-family: $font_b;
+     text-align: center;
+     font-size: 22px;
+	 color: #333333;
+}
+
+//slider
+
+div.slider{
+     height: 438px;
+     width: $all;
+     overflow: hidden;
+     position: relative;
+}
+.slider_1, .slider_2, .slider_3 {
+     height: 400px;
+     width: 300px;
+     z-index: 9;
+     margin-left: 250px;
+     overflow: hidden;
+     position: relative;
+     float:left;
+ }
+.slider_2, .slider_3{
+     margin-left: 20px;
+}
+ .slider_1 ul, .slider_2 ul, .slider_3 ul, .slider_1 li, .slider_2 li, .slider_3 li  {
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+ }
+ .slider_1 ul, .slider_2 ul, .slider_3 ul  {
+     width: 9999px; 
+ }
+ .slider_1 ul li, .slider_2 ul li, .slider_3 ul li {
+     height: 400px;
+     width: 300px;
+     float: left; 
+	 list-style-type: none;
+ }
+ .slider_1 .nav_1, .slider_2 .nav_2, .slider_3 .nav_3 {
+     left: 15px;
+     bottom: 12px;
+	 position: absolute;
+ }
+ .slider_1 .nav_1 span, .slider_2 .nav_2 span, .slider_3 .nav_3 span {
+     height: 36px;
+     width: 120px;
+     margin-bottom: 190px;
+     margin-left: 8px;
+     opacity: 0.9;
+     cursor: pointer;
+     overflow: hidden;
+     display: block;
+     float: left;
+ }
+
+//text_meet
+
+div.meet{
+     height: 66px;
+     width: $all;
+     padding-top: 51px;
+     font-family: $font_b;
+     font-size: 22px;
+     text-align: center;
+	 color: #333333;
+}
+
+//photo_guys
+
+div.photo_guys{
+     height: 139px;
+     width: $all;
+     margin-left: 180px;
+     overflow: hidden;
+     clear: both;
+}
+.guy_1, .guy_2, .guy_3, .guy_4{
+     height: 122px;
+     width: 122px;
+     float: left;
+     margin-left: 115px;
+     border: 1px solid $w;
+     @include border-radius (90px);
+}
+.guy_1 img, .guy_2 img, .guy_3 img, .guy_4 img,{
+     margin-left:90px;
+     margin-top: 80px;
+}
+div.guy_1{
+     background-image: url(../images/boys_1.png);
+}
+div.guy_2, .guy_2_mobile{
+     background-image: url(../images/girls_2.png); 
+}
+div.guy_3, .guy_3_mobile{
+     background-image: url(../images/boys_3.png);
+}
+div.guy_4, .guy_4_mobile{
+     background-image: url(../images/girls_44.png);
+}
+
+//guys_name
+
+div.guys_name{
+    height: 32px;
+    width: $all;
+	margin-left: 298px;
+    font-family: $font_b;
+	color: #333333;  
+}
+.name_1, .name_2, .name_3, .name_4{
+    height: 32px;
+    width: 108px;
+    margin-right: 135px;
+	float: left;
+    text-align: center;
+    font-size: 13px;
+}
+.name_768, .history_768_2, .guy_768, .before_buton_768{
+	display: none;
+}
+
+//guys history
+.history_768{
+	display: none;
+}
+.guyes_history{
+    height: 100px;
+    width: $all;
+    margin-left: 255px;
+    overflow: hidden;
+    position: relative;
+}
+.history_1, .history_2, .history_3, .history_4{
+    height: 65px;
+    width: 220px;
+    margin-right: 20px;
+	float: left;
+    font-family: arial;
+    font-size: 14px;
+    text-align: center;
+    color: #8f8f8f;  
+}
+//button see
+div.buton_see{
+	height: 137px;
+	width: $all; 
+}
+.buton_see_a{
+	height: 29px;
+	width: 189px;
+	margin-left: 622px;
+	padding-top: 7px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #ff4e50;
+	font-family: $font_b;
+	border: 2px solid #ff4e50;
+    @include border-radius (30px);
+}
+.discover_holliday{
+	height: 56px;
+	width: $all;
+	text-align: center;
+	font-family: $font_b;
+	font-size: 22px;
+	color: #333333;	
+}
+.buton_see_768{
+	display: none;
+}
+
+// pixabay
+
+.grid{
+	height: 990px;
+	width: 990px;
+	margin-left: 210px;
+	overflow: hidden;
+	position: relative;	
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4,  .grid-item7{
+	height: 310px;
+	width: 300px;
+	margin-left: 20px;
+	margin-bottom: 19px;
+	float: left;
+	@include border-radius (10px);
+}
+.grid-item5, .grid-item6{
+	height: 310px;
+	width: 620px;
+	margin-left: 20px;
+	margin-bottom: 19px;
+	float: left;
+	@include border-radius (10px);	
+}
+.stile1, .stile2, .stile3, .stile4, .stile5, .stile6, .stile7{
+	margin-top: 150px;
+	margin-left: 100px;
+	position: absolute;
+	font-family: $font_b;
+	text-align: center;
+	font-size: 32px;
+	color: white;
+}
+.grid-item5 img, .grid-item6 img{
+	height: 310px;
+	width: 620px;
+	margin-left: 20px;
+	@include border-radius (7px);
+}
+.grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item7 img,{
+	height: 310px;
+	width: 300px;
+	margin-left: 20px;
+	@include border-radius (7px);
+}
+
+//discover holliday2
+
+.discover_holliday2{
+	height: 56px;
+	width: $all;
+	padding-top: 70px;
+	text-align: center;
+	font-family: $font_b;
+	font-size: 22px;
+	color: #333333;
+}
+//hi!
+
+div.hi{
+	height: 56px;
+	width: $all;
+	text-align: center;
+	font-family: arial;
+	font-size: 18px;
+	color: #858585;
+}
+
+//search
+
+
+.search{
+	height: 152px;
+	width: $all;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 4px solid #ff4e50;
+}
+
+input{
+	height: 39px;
+	width: 233px;
+	margin-left: 520px;
+	padding-left: 12px;
+	float: left;
+	border: 1px solid $gr;
+    @include border-radius (3px);	 
+}
+.searchb button {
+	height: 41px;
+	width: 160px;
+	padding-top: 3px;
+	margin-left: 10px;
+	display: block;
+	float: left;
+	background-color: #ff4e50;
+	text-align: center;
+	font-size: 14px;
+	font-family: $font_b;
+	color: white;
+	border: 2px solid #ff4e50;
+    @include border-radius (30px);
+}
+
+//down
+
+.urlaub_down{
+	height: 30px;
+	width: $all;
+	padding-top: 40px;
+	padding-left: 199px;
+}
+.urlaub_d{
+	height: 30px;
+	width: 250px;
+	padding-left: 42px;
+	float: left;
+	font-size: 16px;
+	font-family: $font_b;
+	color: #ff4e50;	
+}
+.company_a {
+	height: 30px;
+	width: 160px;
+	float:left;
+	display: block;
+	font-family: $font_b;
+	font-size: 14px;
+	color: #333333;
+	text-decoration: none;	
+}
+.partners_a {
+	height: 30px;
+	width: 455px;
+	float:left;
+	display: block;
+	font-family: $font_b;
+	font-size: 14px;
+    text-decoration: none;
+	color: #333333;	
+}
+.design{
+	height: 30px;
+	width: 212px;
+	float:left;
+	font-family: $font_b;
+	font-size: 11px;
+	color: #cccccc;
+}
+.menu_down{
+	height: 100px;
+	width: 611px;
+	padding-left: 486px;
+	float: left;
+}
+.menu_down a{
+	font-family: $font_1;
+	font-size: 14px;
+	text-decoration: none;
+	color: #adadad;
+}
+.menu_down_u li{
+	list-style: none;
+	padding-bottom: 7px;
+}
+.areto{
+	height: 100px;
+	padding-left: 50px;
+}
+p{
+    display: none;
+}

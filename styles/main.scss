@@ -1,0 +1,1176 @@
+$font_1:'montserratregular';
+$font_b:'montserratbold';
+$primary-color: red;
+$green: green;
+$gr: grey;
+$b: black;
+$h: 100px;
+$w: white;
+$all: 1440px;
+$tablet: 768px;
+$mobile: 320px;
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@import 'variables';
+
+
+
+*{
+     margin: 0;
+     padding: 0;
+}
+@font-face {
+     font-family: 'montserratbold';
+     src: url('../files/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../files/montserrat-bold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'montserratregular';
+     src: url('../files/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../files/montserrat-regular-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+//peoples
+div.peoples{
+     height: 700px;
+     width: $all;
+     background-image:url(../images/peoples_up.png);
+}
+//peoples_1
+div.peoples_1{
+     height: 218px;
+     width: $all;
+}
+div.urlau{
+     height: 60px;
+     width: 770px;
+     padding-left: 250px;
+     padding-top: 49px;
+	 float: left;
+     font-family: $font_1;
+     font-size: 20px;
+	 color: $w;
+}
+.urlau_320, .peoples_mobile, .ruki_mobile, .driver_mobile, .nogi_mobile, .guys_mobile, .buton_see_mobile, .discover_holliday_mobile, .menu_down_mobile{
+	display: none;
+}
+div.log{
+     height: 60px;
+     width: 60px;
+     padding-top: 49px;
+     padding-left: 23px;
+     float: left;   
+}
+div.sign{
+     height: 60px;
+     width: 320px;
+     padding-top: 39px;
+     float:left;
+     font-size: 14px; 
+     font-family: $font_1;
+}
+.sign_a, .log_a{
+     height: 40px;
+     width: 60px;
+     font-size: 14px;
+     font-family: $font_1;
+     display: block;
+     text-decoration: none;
+	 color: $w;  
+}
+.sign_a{
+     height: 27px;
+     width: 72px;
+     padding-left: 15px;
+     padding-top: 6px;
+     border: 1px solid $w;
+     @include border-radius (20px);  
+}
+div.share_your{
+     height: 108px;
+     width: $all;
+     text-align: center;
+     font-size: 52px;
+     font-family: $font_b;
+     color: $w;
+}
+
+//peoples_2
+
+div.peoples_2{
+     height: 115px;
+     width: $all;
+}
+div.and_find{
+     height: 69px;
+     width: $all;
+	 padding-top: 33px;
+     font-size: 24px;
+     font-family: sans-serif;
+     text-align: center;
+	 color: $w;
+}
+div.find_partner{
+     height: 100px;
+     width: $all;
+     padding-left: 609px; 
+}
+a.find_partner_a{
+     height: 31px;
+     width: 225px;
+     padding-top: 9px;
+     display: block;
+     text-decoration: none;
+	 background-color: #ff4e50;
+     font-family: $font_1;
+     font-size: 14px;
+     text-align: center;
+	 color: $w;
+     border: 1px solid #ff4e50;
+     @include border-radius (20px);
+}
+div.how_urlau{
+     height: 55px;
+     width: $all;
+     padding-top: 100px;
+     font-family: $font_b;
+     text-align: center;
+     font-size: 22px;
+	 color: #333333;
+}
+
+//slider
+
+div.slider{
+     height: 438px;
+     width: $all;
+     overflow: hidden;
+     position: relative;
+}
+.slider_1, .slider_2, .slider_3 {
+     height: 400px;
+     width: 300px;
+     z-index: 9;
+     margin-left: 250px;
+     overflow: hidden;
+     position: relative;
+     float:left;
+ }
+.slider_2, .slider_3{
+     margin-left: 20px;
+}
+ .slider_1 ul, .slider_2 ul, .slider_3 ul, .slider_1 li, .slider_2 li, .slider_3 li  {
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+ }
+ .slider_1 ul, .slider_2 ul, .slider_3 ul  {
+     width: 9999px; 
+ }
+ .slider_1 ul li, .slider_2 ul li, .slider_3 ul li {
+     height: 400px;
+     width: 300px;
+     float: left; 
+	 list-style-type: none;
+ }
+ .slider_1 .nav_1, .slider_2 .nav_2, .slider_3 .nav_3 {
+     left: 15px;
+     bottom: 12px;
+	 position: absolute;
+ }
+ .slider_1 .nav_1 span, .slider_2 .nav_2 span, .slider_3 .nav_3 span {
+     height: 36px;
+     width: 120px;
+     margin-bottom: 190px;
+     margin-left: 8px;
+     opacity: 0.9;
+     cursor: pointer;
+     overflow: hidden;
+     display: block;
+     float: left;
+ }
+
+//text_meet
+
+div.meet{
+     height: 66px;
+     width: $all;
+     padding-top: 51px;
+     font-family: $font_b;
+     font-size: 22px;
+     text-align: center;
+	 color: #333333;
+}
+
+//photo_guys
+
+div.photo_guys{
+     height: 139px;
+     width: $all;
+     margin-left: 180px;
+     overflow: hidden;
+     clear: both;
+}
+.guy_1, .guy_2, .guy_3, .guy_4{
+     height: 122px;
+     width: 122px;
+     float: left;
+     margin-left: 115px;
+     border: 1px solid $w;
+     @include border-radius (90px);
+}
+.guy_1 img, .guy_2 img, .guy_3 img, .guy_4 img,{
+     margin-left:90px;
+     margin-top: 80px;
+}
+div.guy_1{
+     background-image: url(../images/boys_1.png);
+}
+div.guy_2, .guy_2_mobile{
+     background-image: url(../images/girls_2.png); 
+}
+div.guy_3, .guy_3_mobile{
+     background-image: url(../images/boys_3.png);
+}
+div.guy_4, .guy_4_mobile{
+     background-image: url(../images/girls_44.png);
+}
+
+//guys_name
+
+div.guys_name{
+    height: 32px;
+    width: $all;
+	margin-left: 298px;
+    font-family: $font_b;
+	color: #333333;  
+}
+.name_1, .name_2, .name_3, .name_4{
+    height: 32px;
+    width: 108px;
+    margin-right: 135px;
+	float: left;
+    text-align: center;
+    font-size: 13px;
+}
+.name_768, .history_768_2, .guy_768, .before_buton_768{
+	display: none;
+}
+
+//guys history
+.history_768{
+	display: none;
+}
+.guyes_history{
+    height: 100px;
+    width: $all;
+    margin-left: 255px;
+    overflow: hidden;
+    position: relative;
+}
+.history_1, .history_2, .history_3, .history_4{
+    height: 65px;
+    width: 220px;
+    margin-right: 20px;
+	float: left;
+    font-family: arial;
+    font-size: 14px;
+    text-align: center;
+    color: #8f8f8f;  
+}
+//button see
+div.buton_see{
+	height: 137px;
+	width: $all; 
+}
+.buton_see_a{
+	height: 29px;
+	width: 189px;
+	margin-left: 622px;
+	padding-top: 7px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #ff4e50;
+	font-family: $font_b;
+	border: 2px solid #ff4e50;
+    @include border-radius (30px);
+}
+.discover_holliday{
+	height: 56px;
+	width: $all;
+	text-align: center;
+	font-family: $font_b;
+	font-size: 22px;
+	color: #333333;	
+}
+.buton_see_768{
+	display: none;
+}
+
+// pixabay
+
+.grid{
+	height: 990px;
+	width: 990px;
+	margin-left: 210px;
+	overflow: hidden;
+	position: relative;	
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4,  .grid-item7{
+	height: 310px;
+	width: 300px;
+	margin-left: 20px;
+	margin-bottom: 19px;
+	float: left;
+	@include border-radius (10px);
+}
+.grid-item5, .grid-item6{
+	height: 310px;
+	width: 620px;
+	margin-left: 20px;
+	margin-bottom: 19px;
+	float: left;
+	@include border-radius (10px);	
+}
+.stile1, .stile2, .stile3, .stile4, .stile5, .stile6, .stile7{
+	margin-top: 150px;
+	margin-left: 100px;
+	position: absolute;
+	font-family: $font_b;
+	text-align: center;
+	font-size: 32px;
+	color: white;
+}
+.grid-item5 img, .grid-item6 img{
+	height: 310px;
+	width: 620px;
+	margin-left: 20px;
+	@include border-radius (7px);
+}
+.grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item7 img,{
+	height: 310px;
+	width: 300px;
+	margin-left: 20px;
+	@include border-radius (7px);
+}
+//discover holliday2
+
+.discover_holliday2{
+	height: 56px;
+	width: $all;
+	padding-top: 70px;
+	text-align: center;
+	font-family: $font_b;
+	font-size: 22px;
+	color: #333333;
+}
+//hi!
+
+div.hi{
+	height: 56px;
+	width: $all;
+	text-align: center;
+	font-family: arial;
+	font-size: 18px;
+	color: #858585;
+}
+
+//search
+
+.search{
+	height: 152px;
+	width: $all;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 4px solid #ff4e50;
+}
+input{
+	height: 39px;
+	width: 233px;
+	margin-left: 520px;
+	padding-left: 12px;
+	float: left;
+	border: 1px solid $gr;
+    @include border-radius (3px);	 
+}
+.searchb button {
+	height: 41px;
+	width: 160px;
+	padding-top: 3px;
+	margin-left: 10px;
+	display: block;
+	float: left;
+	background-color: #ff4e50;
+	text-align: center;
+	font-size: 14px;
+	font-family: $font_b;
+	color: white;
+	border: 2px solid #ff4e50;
+    @include border-radius (30px);
+}
+
+//down
+
+.urlaub_down{
+	height: 30px;
+	width: $all;
+	padding-top: 40px;
+	padding-left: 199px;
+}
+.urlaub_d{
+	height: 30px;
+	width: 250px;
+	padding-left: 42px;
+	float: left;
+	font-size: 16px;
+	font-family: $font_b;
+	color: #ff4e50;	
+}
+.company_a {
+	height: 30px;
+	width: 160px;
+	float:left;
+	display: block;
+	font-family: $font_b;
+	font-size: 14px;
+	color: #333333;
+	text-decoration: none;	
+}
+.partners_a {
+	height: 30px;
+	width: 455px;
+	float:left;
+	display: block;
+	font-family: $font_b;
+	font-size: 14px;
+    text-decoration: none;
+	color: #333333;	
+}
+.design{
+	height: 30px;
+	width: 212px;
+	float:left;
+	font-family: $font_b;
+	font-size: 11px;
+	color: #cccccc;
+}
+.menu_down{
+	height: 100px;
+	width: 611px;
+	padding-left: 486px;
+	float: left;
+}
+.menu_down a{
+	font-family: $font_1;
+	font-size: 14px;
+	text-decoration: none;
+	color: #adadad;
+}
+.menu_down_u li{
+	padding-bottom: 7px;
+	list-style: none;
+}
+.areto{
+	height: 100px;
+	padding-left: 50px;
+}
+p{
+    display: none;
+}
+
+
+
+
+
+/*-----------------------------768px-------------------------*/
+
+@media(max-width:768px){
+body{
+    width: $tablet;
+	height: 700px;
+}
+
+	//peoples
+div.peoples{
+    width: $tablet;
+	background-size:cover;
+	background-position: center;    
+}
+	//peoples_1
+
+div.peoples_1{
+    height: 212px;
+    width: $tablet;
+}
+div.urlau{
+    height: 66px;
+    width: 512px;
+    padding-left: 54px;
+}
+div.log{
+    height: 66px;
+    width: 64px;
+    padding-top: 52px;
+    padding-left: 0px;  
+}
+div.sign{
+    height: 60px;
+    width: 130px;    
+}
+.sign_a, .log_a{
+    height: 40px;
+    width: 60px;  
+}
+.sign_a{
+    height: 26px;
+    width: 69px;
+    padding-left: 15px;
+    padding-top: 9px; 
+}
+div.share_your{
+    height: 96px;
+    width: $tablet;
+}
+	//peoples_2
+
+div.peoples_2{
+    height: 150px;
+    width: $tablet;
+}
+div.and_find{
+    height: 59px;
+    width: $tablet;
+    padding-top: 58px;
+}
+div.find_partner{
+    width: $tablet;
+    padding-left: 265px;
+}
+
+div.how_urlau{
+    width: $tablet;
+    padding-top: 95px;     
+}
+     //slider
+
+div.slider{
+	height: 449px;
+    width: $tablet;
+}
+.slider_1, .slider_2, .slider_3 {
+     height: 400px;
+     width: 236px;
+     margin-left: 10px;
+}
+.slider img{
+	 height: 400px;
+	 width: 236px;
+}
+.slider_1 ul li, .slider_2 ul li, .slider_3 ul li {
+     width: 236px;
+}
+
+//text_meet
+
+div.meet{
+     height: 60px;
+     width: $tablet;   
+}
+//photo_guys
+
+div.photo_guys{
+     height: 140px;
+     width: 560px;
+     margin-left: 80px; 
+}
+.guy_1, .guy_2{
+     height: 122px;
+     width: 122px;
+     margin-left: 115px;
+	 margin-right: 15px;
+	  float: left;
+}
+.guy_3, .guy_4{
+	  display: none;
+}
+.guy_3_768, .guy_4_768{
+	 height: 122px;
+     width: 122px;
+     margin-left: 195px;
+	 float: left;
+     border: 1px solid $w;
+     @include border-radius (90px);	
+}
+.guy_4_768{
+	margin-left: 138px;
+}
+.guy_1 img, .guy_2 img, .guy_3_768 img, .guy_4_768 img {
+     margin-left:85px;
+     margin-top: 85px;
+}
+.guy_768{
+     display: initial;
+	 margin-left: 270px;
+}
+div.guy_3_768{
+     background-image: url(../images/boys_3.png);
+}
+div.guy_4_768{
+     background-image: url(../images/girls_44.png);
+	 margin-top:-18px;
+}
+	
+//guys_name
+.before_buton_768{
+	 height: 532px;
+	 width: $tablet;
+	 display: initial;	
+}
+div.guys_name{
+     height: 115px;
+     width: $tablet;
+	 margin-left: 200px;
+	 overflow: hidden;
+	 position: relative;
+}
+.name_1, .name_2{
+     height: 32px;
+	 width: 108px;
+     margin-right: 105px;
+}	
+.name_2{
+	 width: 210px;
+	 margin-right: 195px;
+}
+.name_3, .name_4{
+	 display: none;
+}
+	//guys history
+.history_768{
+	 height: 50px;
+     width: 693px;
+	 display: initial;
+     overflow: hidden;
+     position: relative;
+}
+.history_1_768, .history_2_768{
+	 height: 50px;
+     width: 245px;
+	 float: left;
+     font-family: arial;
+     font-size: 14px;
+     text-align: center;
+     color: #8f8f8f;
+}
+.history_768_2{
+	  height: 621px;
+      width: $tablet;
+	  display: initial;
+      overflow: hidden;
+      position: relative;
+}
+.history_3_768, .history_4_768{
+	  height: 95px;
+      width: 200px;
+      margin-left: 140px;
+	  float: left;
+      font-family: arial;
+      font-size: 14px;
+      text-align: center;
+      color: #8f8f8f;
+}
+.history_4_768{
+	  margin-left: 90px;
+}
+.name_768{
+	  height: 130px;
+	  display: initial;
+      width: $tablet;
+	  overflow: hidden;
+	  position: relative;
+}
+.name_3_768, .name_4_768{
+      height: 30px;
+	  width: 245px;
+      padding-left:  135px;
+	  float: left; 
+      font-family: $font_b;
+	  color: #333333;
+      text-align: center;
+      font-size: 13px;
+}	
+.name_4_768{
+	  padding-left:  15px;
+}
+.guyes_history{
+	  display: none;
+}
+	
+	//button see
+div.buton_see{
+	height: 137px;
+	width: $tablet;
+	margin-left: 143px;
+	margin-top: 252px;
+}
+.buton_see_a{
+	height: 29px;
+	width: 189px;
+	margin-left: 143px;
+	margin-top: 245px;
+	padding-top: 7px;
+}
+
+.discover_holliday{
+	height: 51px;
+	width: $tablet;
+	padding-bottom: 14px;
+}
+
+
+	// pixabay
+
+.grid{
+	 height: 971px;
+	 width: 768px;
+	 margin-left: 1px;
+}
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4,  .grid-item7{
+	 height: 310px;
+	 width: 230px;
+	 margin-left: 15px;
+}
+.grid-item5, .grid-item6{
+	 height: 310px;
+	 width: 460px;
+	 margin-left: 15px;
+}
+.stile1, .stile2, .stile3, .stile4, .stile5, .stile6, .stile7{
+	 margin-top: 150px;
+	 margin-left: 50px;
+}
+.grid-item5 img, .grid-item6 img{
+	 height: 310px;
+	 width: 460px;
+}
+.grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item7 img,{
+	 height: 310px;
+	 width: 230px;
+	 margin-left: 5px;
+}
+	//discover holliday2
+
+.discover_holliday2{
+	 height: 56px;
+	 width: $tablet;
+	 padding-top: 106px;
+}
+//hi!
+
+div.hi{
+	 height: 56px;
+	 width: $tablet;
+}
+	
+//search
+
+.search{
+	 height: 152px;
+	 width: $tablet;
+}
+
+input{
+	 margin-left: 180px; 
+}
+//down
+
+.urlaub_down{
+	 width: $tablet;
+	 padding-left:40px;
+}
+.urlaub_d{
+	 width: 225px;
+	 padding-left: 22px;
+}
+.company_a {
+	 width: 160px;
+}
+.partners_a {
+	 height: 30px;
+	 width: 180px;
+}
+.design{
+	 width: 90px;
+}
+.menu_down{
+	 width: 310px;
+	 padding-left:285px;
+}
+
+}
+
+
+
+/*-----------------------------320px-------------------------*/
+
+@media(max-width:320px){
+
+	
+	//peoples
+div.peoples{
+	height: 544px;
+    width: $mobile;
+	background-size:cover;
+	background-position: center;    
+}
+//peoples_1
+
+div.peoples_1{
+     height: 175px;
+     width: $mobile;
+}
+div.peoples_mobile{
+	display: initial;
+	position: absolute;
+}
+.peoples_mobile img{
+	opacity: 0.15;
+}
+.urlau, .ul_1, .ul_2, .ul_3, .buton_see, .discover_holliday{
+		display: none;
+}
+
+div.log{
+    height: 48px;
+    width: 61px;
+    padding-top: 34px;
+    padding-left: 84px;
+	color: #f5f5f5;	 
+}	
+.log_a{
+     height: 37px;
+     width: 45px;
+	 color: #d0d1d0;
+}
+div.sign{
+     height: 33px;
+     width: 89px;
+     padding-top: 21px;
+	 padding-left: 0px;
+}
+    
+.sign_a{
+     height: 24px;
+     width: 69px;
+     padding-top: 7px;
+     border: 2px solid #d1d1d0;
+	 color: #d1d1d0;
+}
+
+div.urlau_320{
+	height: 134px;
+	width: 320px;
+	display: initial;
+	padding-top: 30px;
+	padding-left: 70px;
+	font-family: $font_b;
+	font-size: 20px;
+    color: $w;
+}
+	
+div.share_your{
+     height: 80px;
+     width: $mobile;
+     padding-left: 5px;
+     padding-top: 24px;
+     font-size: 30px;  
+}
+	
+//peoples_2
+
+div.peoples_2{
+     height: 309px;
+     width: $mobile;
+}
+div.and_find{
+     height: 55px;
+     width: 218px;
+	 padding-left: 46px;
+	 padding-top: 0px;
+     font-size:18px;
+}
+div.find_partner{
+    width: $mobile;
+    padding-left: 20px;
+}
+a.find_partner_a{
+     height: 28px;
+     width: 280px;
+     padding-top: 13px;
+}
+div.how_urlau{
+     height: 37px;
+     width: $mobile;
+     padding-top: 33px;
+}	
+	
+	//slider
+
+div.slider{
+     height: 742px;
+     width: $mobile;
+}
+.slider_1, .slider_2, .slider_3 {
+     height:241px;
+     width: 302px;
+     margin-left:9px;
+	 margin-bottom: 9px;
+     overflow: hidden;
+     position: relative;
+	 float:none;
+}
+
+.ruki_mobile, .driver_mobile, .nogi_mobile{
+	 height: 241px;
+     width: 302px;
+	 display: initial;
+}
+.ruki_mobile img, .driver_mobile img, .nogi_mobile img{
+	 height: 241px;
+     width: 302px;
+	 @include border-radius (8px);
+}
+
+ //text_meet
+
+div.meet{
+     height: 61px;
+     width: 276px;
+     padding-top: 31px;
+	 padding-left: 15px;
+     font-family: $font_b;   
+}
+
+//photo_guys
+
+div.photo_guys{
+     height:122px;
+     width: $mobile;
+     margin-left: 0px;
+	 margin-top: 8px;
+}
+.guys_mobile{
+	 height: 820px;
+	 width: $mobile;
+	 display:initial;	 
+}
+.guy_3, .guy_4, .guy_2, .guy_768, .guys_name, .name_768, .history_768_2{
+	  display: none;
+}
+.name_1_mobile, .name_2_mobile, .name_3_mobile, .name_4_mobile{
+	height: 28px;
+	width: $mobile; 
+	padding-top: 18px;
+	text-align: center;
+	font-family: $font_b;
+	color: #333333; 
+	font-size: 14px;
+}
+.history_1_mobile, .history_2_mobile, .history_3_mobile, .history_4_mobile{
+	height: 60px;
+	width: 210px;
+	margin-left: 46px;
+	font-family: arial;
+    font-size: 14px;
+    text-align: center;
+    color: #8f8f8f;
+}
+ .guy_1, .guy_2_mobile, .guy_3_mobile, .guy_4_mobile{
+     height: 122px;
+     width: 122px;
+	 margin-left: 98px;
+	 margin-right: 0;
+     float: none;
+     border: 1px solid $w;
+     @include border-radius (90px);
+}
+.history_3_mobile{
+	 height: 90px;	
+}
+.guy_2_mobile img, .guy_3_mobile img, .guy_4_mobile img,{
+     margin-left:87px;
+     margin-top: 80px;
+}
+ 
+//button see
+div.buton_see_mobile{
+	height: 270px;
+	width: 275px; 
+	display: initial;
+}
+.buton_see_mobile_a{
+	height: 27px;
+	width: 275px;
+	margin-left: 18px;
+	padding-top: 9px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #ff4e50;
+	font-family: $font_b;
+	font-size: 14px;
+	border: 2px solid #ff4e50;
+    @include border-radius (30px);
+}
+.discover_holliday_mobile{
+	height: 100px;
+	width: 260px;
+	margin-top: 140px;
+	padding-left: 11px;
+	display: initial;
+	text-align:justify;
+	font-family: $font_b;
+	font-size: 22px;
+	color: #333333;	
+}
+.discover_holliday{
+	display: none;
+}
+
+// pixabay
+
+.grid{
+	height: 900px;
+	width: 301px;
+	margin-left: 4px;
+	padding-top: 80px;
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7{
+	height: 121px;
+	width: 301px;
+	margin-left: 4px;
+	margin-bottom: 10px;
+	float: none;
+    @include border-radius (10px);
+}
+.grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item7 img,.grid-item5 img, .grid-item6 img{
+	height: 121px;
+	width: 301px;
+	margin-left: 4px;
+	@include border-radius (10px);
+}
+	
+//discover holliday2
+
+.discover_holliday2{
+	height: 65px;
+	width: $mobile;
+	padding-top: 35px;
+}
+//hi!
+
+div.hi{
+	height: 34px;
+	width: $mobile;	
+}
+//search
+.search{
+	height: 125px;
+	width: $mobile;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 4px solid #ff4e50;
+}
+input{
+	height: 40px;
+	width: 265px;
+	margin-left: 14px;
+	padding-left: 17px;
+	float: none;	
+}
+.searchb button {
+	height: 41px;
+	width: 280px;
+	padding-top: 3px;
+	margin-left: 15px;
+	margin-top: 11px;
+	float: none;
+}
+
+//down
+
+.urlaub_down{
+	height: 31px;
+	width: $mobile;
+	padding-top: 20px;
+	padding-left: 47px;
+}
+.urlaub_d{
+	height: 30px;
+	width: 250px;
+	padding-left: 32px;
+	float: none;	
+}
+.company_a {
+	height: 5px;
+	width: 190px;
+	margin-left: 73px;
+	float:none;	
+}
+.partners_a {
+	height: 30px;
+	width: 190px;
+	margin-left: 73px;
+	float:none;
+}
+.design{
+	width: 190px;
+	float:none;
+	font-size: 12px;
+	margin-left: 65px;
+}
+.menu_down{
+	display: none;
+}
+.menu_down_mobile{
+	height: 0px;
+	width: 184px;
+	padding-left: 30px;
+	display: initial;
+	float: none;
+}
+.menu_down_mobile a{
+	font-family: $font_1;
+	font-size: 14px;
+	text-decoration: none;
+	color: #adadad;
+}
+.menu_down_u li{
+	padding-bottom: 37px;
+	padding-left: 12px;
+	list-style:none;
+	display: inline;
+}
+.areto{
+	height: 30px;
+	width: 119px;
+	padding-left: 86px;
+	padding-top: 110px;
+	float: none;
+}
+}
